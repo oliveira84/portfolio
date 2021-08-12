@@ -8,17 +8,18 @@
   position: relative;
 
   .arrow {
-    height: 60px;
     position: absolute;
     cursor: pointer;
+    color: white;
+    font-size: 5rem;
+
 
     @include mobile {
       display: none;
     }
 
     &.left {
-      left: 5%;
-      transform: rotateY(180deg);
+      left: 4%;
     }
 
     &.right {

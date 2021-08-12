@@ -1,5 +1,6 @@
 import "./about.scss";
 import {useState} from "react";
+import {KeyboardArrowLeft, KeyboardArrowRight} from "@material-ui/icons"
 
 const About = (props) => {
 
@@ -60,8 +61,8 @@ const About = (props) => {
         ))
         }
       </div>
-      <img src="assets/arrow.png" className={"arrow left"} onClick={() => handleClick("left")} alt=""/>
-      <img src="assets/arrow.png" className={"arrow right"} onClick={() => handleClick("right")} alt=""/>
+      <KeyboardArrowLeft className={"arrow left"} onClick={() => handleClick("left")} alt=""/>
+      <KeyboardArrowRight className={"arrow right"} onClick={() => handleClick("right")} alt=""/>
     </div>
   );
 }
