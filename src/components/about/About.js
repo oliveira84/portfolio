@@ -16,7 +16,7 @@ const About = (props) => {
     {
       id: "2",
       title: "Experience",
-      desc: "I have intermediate experience with: HTML, CSS, JavaScript, Java and C/C++. And beginner experience in ReactJs.",
+      desc: "I have intermediate experience with: HTML, CSS, JavaScript, ReactJs, Java and C/C++.",
       img: "assets/webDev3.svg",
     },
     {

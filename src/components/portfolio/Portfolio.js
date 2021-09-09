@@ -2,6 +2,7 @@ import "./portfolio.scss";
 import PortfolioList from "../portfolioList/PortfolioList";
 import {useEffect, useState} from "react"
 import {ccppPortfolio, frontendPortfolio, javaPortfolio} from "../../data";
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 
 const Portfolio = (props) => {
@@ -34,7 +35,9 @@ const Portfolio = (props) => {
   return (
     <div className={"portfolio"} id={"portfolio"}>
       <h2>Portfolio</h2>
+
       <ul>
+        <a href="https://github.com/oliveira84?tab=repositories" target="_blank"><GitHubIcon className={"icon"}/></a>
         {list.map(item => (
           <PortfolioList id={item.id} title={item.title} selected={item.id === selected}
                          setSelected={setSelected}/>))}
@@ -43,7 +46,7 @@ const Portfolio = (props) => {
         {data.map((item) => (
           <div className="item">
             <img src={item.img} alt=""/>
-            <a href={item.link}><h3>{item.title}</h3></a>
+            <a href={item.link} target="_blank"><h3>{item.title}</h3></a>
           </div>
         ))}
       </div>
