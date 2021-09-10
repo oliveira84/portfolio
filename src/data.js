@@ -13,7 +13,7 @@ export const frontendPortfolio = [
   },
   {
     id: 3,
-    title: "Sorting visualisation",
+    title: "Sorting algorithms visualisation",
     img: "assets/sorting.png",
     link: "https://oliveira84.github.io/sorting/",
   },
