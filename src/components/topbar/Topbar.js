@@ -1,5 +1,6 @@
 import "./topbar.scss";
 import {Mail} from '@material-ui/icons';
+import React from "react";
 
 const Topbar = (props) => {
   let {menuOpen, setMenuOpen} = props;

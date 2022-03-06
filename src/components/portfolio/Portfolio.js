@@ -1,6 +1,6 @@
 import "./portfolio.scss";
 import PortfolioList from "../portfolioList/PortfolioList";
-import {useEffect, useState} from "react"
+import React, {useEffect, useState} from "react"
 import {ccppPortfolio, frontendPortfolio, javaPortfolio} from "../../data";
 import GitHubIcon from '@material-ui/icons/GitHub';
 

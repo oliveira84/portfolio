@@ -1,5 +1,5 @@
 import "./about.scss";
-import {useState} from "react";
+import React, {useState} from "react";
 import {KeyboardArrowLeft, KeyboardArrowRight} from "@material-ui/icons"
 
 const About = (props) => {

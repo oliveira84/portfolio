@@ -1,6 +1,6 @@
 import "./contact.scss"
 import emailjs from 'emailjs-com';
-import {useState} from "react";
+import React, {useState} from "react";
 
 const Contact = () => {
   const [text, setText] = useState("");
