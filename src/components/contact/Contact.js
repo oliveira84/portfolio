@@ -3,39 +3,20 @@ import emailjs from 'emailjs-com';
 import React, {useState} from "react";
 
 const Contact = () => {
-  const [text, setText] = useState("");
-  const [name, setName] = useState("");
-  const [mail, setMail] = useState("");
   const [sent, setSent] = useState(false);
   const [error, setError] = useState(false);
 
 
   function sendEmail(e) {
     e.preventDefault();
-
     emailjs.sendForm('service_5vskdvo', 'template_f5qpi58', e.target, 'user_Ymd1lCnjzFCsQscv1YHpd')
       .then((result) => {
-        console.log(result.text);
+        /*console.log(result.text);*/
         setSent(true);
-        setText("");
-        setName("");
-        setMail("");
       }, (error) => {
-        console.log(error.text);
+        /*console.log(error.text);*/
         setError(true);
       });
-  }
-
-  function handleTextChange(e) {
-    setText(e.text)
-  }
-
-  function handleMailChange(e) {
-    setMail(e.text)
-  }
-
-  function handleNameChange(e) {
-    setName(e.text)
   }
 
   return (
@@ -50,11 +31,11 @@ const Contact = () => {
             <form className="contact-form" onSubmit={sendEmail}>
               <input type="hidden" name="contact_number"/>
               <label>Name</label>
-              <input type="text" name="user_name" value={name} onChange={handleNameChange}/>
+              <input type="text" name="user_name"/>
               <label>Email</label>
-              <input type="email" name="user_email" value={mail} onChange={handleMailChange}/>
+              <input type="email" name="user_email"/>
               <label>Message</label>
-              <textarea name="message" value={text} onChange={handleTextChange}/>
+              <textarea name="message"/>
               <input className={"button"} type="submit" value="Send"/>
               <span className={"sent " + (sent && "showSent")}>Thanks for your message.</span>
               <span className={"error " + (error && "showError")}>Something went wrong, please contact me through oliveiradaniel@outlook.com.</span>

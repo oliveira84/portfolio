@@ -10,11 +10,21 @@ import Menu from "./components/menu/Menu";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [navShadow, setNavShadow] = useState(false);
+
+  const handleScroll = (e) => {
+    if (e.target.scrollTop > 100) {
+      setNavShadow(true);
+    } else {
+      setNavShadow(false);
+    }
+  }
+
   return (
     <div className="app">
-      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} navShadow={navShadow}/>
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <div className="sections">
+      <div className="sections" onScroll={handleScroll}>
         <Intro/>
         <About/>
         <Portfolio/>

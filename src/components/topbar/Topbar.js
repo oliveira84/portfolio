@@ -3,9 +3,9 @@ import {Mail} from '@material-ui/icons';
 import React from "react";
 
 const Topbar = (props) => {
-  let {menuOpen, setMenuOpen} = props;
+  let {menuOpen, setMenuOpen, navShadow} = props;
   return (
-    <div className={"topbar " + (menuOpen && "active")}>
+    <div className={"topbar " + (menuOpen && " active ") + ((!menuOpen && navShadow) && " shadow")}>
       <div className="wrapper">
         <div className="left">
           <a href={"#intro"} className={"logo"}>Daniel_Oliveira</a>

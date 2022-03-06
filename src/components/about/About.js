@@ -40,7 +40,7 @@ const About = (props) => {
     <div className={"about"} id={"about"}>
       <div className="slider">
         {data.map(item => (
-          <div className="container" style={{
+          <div key={item.id} className="container" style={{
             transform: `translateX(-${currentSlider * 100}vw)`,
             transition: "all 1s ease-out"
           }}>

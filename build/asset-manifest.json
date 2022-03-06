@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "main.js": "static/js/main.a7cf4703.js",
   "main.js.map": "static/js/main.a7cf4703.js.map",
   "static/media/about.scss": "static/media/about.299d663f.scss",
@@ -9,4 +10,24 @@
   "static/media/portfolio.scss": "static/media/portfolio.74422f57.scss",
   "static/media/portfolioList.scss": "static/media/portfolioList.01930c5b.scss",
   "static/media/topbar.scss": "static/media/topbar.f504e09d.scss"
+=======
+  "files": {
+    "main.css": "./static/css/main.513463a1.chunk.css",
+    "main.js": "./static/js/main.a5350816.chunk.js",
+    "main.js.map": "./static/js/main.a5350816.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.eac7fa23.js",
+    "runtime-main.js.map": "./static/js/runtime-main.eac7fa23.js.map",
+    "static/js/2.44808690.chunk.js": "./static/js/2.44808690.chunk.js",
+    "static/js/2.44808690.chunk.js.map": "./static/js/2.44808690.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.513463a1.chunk.css.map": "./static/css/main.513463a1.chunk.css.map",
+    "static/js/2.44808690.chunk.js.LICENSE.txt": "./static/js/2.44808690.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eac7fa23.js",
+    "static/js/2.44808690.chunk.js",
+    "static/css/main.513463a1.chunk.css",
+    "static/js/main.a5350816.chunk.js"
+  ]
+>>>>>>> 4a6b61ca19b8deffdd0aef85f001edd75ab57693
 }
